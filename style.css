@@ -1,0 +1,161 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #fbf8f8; /* Fundo levemente aquecido */
+    color: #4a4a4a;
+    line-height: 1.6;
+}
+
+/* Cabeçalho com Degradê Azul Bebê e Rosa */
+header {
+    background: linear-gradient(135deg, #e0f2fe, #fce7f3); 
+    color: #334155;
+    text-align: center;
+    padding: 4rem 1rem;
+    border-bottom: 1px solid #fae8ff;
+}
+
+header h1 {
+    font-size: 2.6rem;
+    margin-bottom: 0.5rem;
+    color: #db2777; /* Rosa em destaque para o nome */
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #64748b;
+}
+
+/* Container de Conteúdo */
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+/* Seções (Cards Brancos) */
+section {
+    background: white;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(219, 39, 119, 0.03);
+    border: 1px solid #fff5f5;
+}
+
+h2 {
+    color: #3d3d3d;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+    border-bottom: 2px solid #fbcfe8; /* Linha rosa pastel */
+    display: inline-block;
+    padding-bottom: 0.3rem;
+}
+
+/* Tags de Habilidades Variadas */
+.tags-habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 1rem;
+}
+
+.tag {
+    background-color: #f0f9ff; /* Azul bebê de fundo */
+    color: #0369a1; 
+    padding: 0.4rem 1.1rem;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 0.85rem;
+    border: 1px solid #e0f2fe;
+}
+
+/* Alternando cor das tags para Rosa */
+.tag:nth-child(even) {
+    background-color: #fdf2f8; 
+    color: #be185d; 
+    border: 1px solid #fce7f3;
+}
+
+/* Cards de Projetos */
+.projeto-card {
+    background: #fafafa;
+    border-left: 4px solid #fbcfe8;
+    padding: 1.2rem;
+    margin-top: 1.2rem;
+    border-radius: 0 8px 8px 0;
+    transition: transform 0.2s;
+}
+
+.projeto-card:hover {
+    transform: translateX(5px);
+    background: #fffdfd;
+}
+
+.projeto-card h3 {
+    color: #475569;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.btn-link {
+    display: inline-block;
+    margin-top: 0.6rem;
+    color: #db2777;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+
+/* Links de Contato */
+.links-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    margin-top: 1.2rem;
+}
+
+.links-contato a {
+    color: #475569;
+    text-decoration: none;
+    font-weight: 500;
+    width: fit-content;
+    border-bottom: 1px dashed #cbd5e1;
+}
+
+.links-contato a:hover {
+    color: #db2777;
+    border-bottom: 1px solid #db2777;
+}
+
+footer {
+    text-align: center;
+    padding: 3rem;
+    color: #94a3b8;
+    font-size: 0.85rem;
+}
+
+/* Responsividade para o Celular */
+@media (max-width: 600px) {
+    header h1 { font-size: 2.1rem; }
+    section { padding: 1.5rem; }
+}
+
+/* Destaque especial e fofo para a tag do React */
+.tag:nth-child(4) {
+    background-color: #ecfeff; /* Fundo ciano/azul bebê bem clarinho */
+    color: #0891b2;            /* Cor clássica do React */
+    border: 1px solid #cffafe;
+    font-weight: 600;
+}
