@@ -231,33 +231,3 @@ section:nth-child(4) { animation-delay: 0.8s; }
     }
 }
 
-/* Checkbox invisível para controlar o estado */
-#modo-escuro-toggle {
-    display: none;
-}
-
-/* O botão interativo */
-.botao-modo {
-    cursor: pointer;
-    font-size: 1.2rem;
-    padding: 8px;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
-    display: inline-block;
-    margin-bottom: 20px;
-}
-
-.botao-modo:hover {
-    transform: rotate(30deg) scale(1.1);
-}
-
-/* Quando o botão for clicado, muda as cores do site inteiro com suavidade */
-#modo-escuro-toggle:checked ~ .container section {
-    background-color: #1e293b;
-    border-color: #334155;
-    color: #cbd5e1;
-}
-#modo-escuro-toggle:checked ~ .container h2 { color: #f472b6; }
-#modo-escuro-toggle:checked ~ .container p { color: #94a3b8; }
-#modo-escuro-toggle:checked ~ .container .projeto-card { background-color: #0f172a; border-color: #1e293b; }
-#modo-escuro-toggle:checked ~ .container .tag, #modo-escuro-toggle:checked ~ .container .links-contato a { background-color: #0f172a; color: #cbd5e1; border-color: #1e293b; }
