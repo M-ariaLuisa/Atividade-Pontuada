@@ -7,10 +7,8 @@
 }
 
 body {
-    
-    background: linear-gradient(300deg, #fdf2f8, #e0f2fe, #f0fdf4);
-    background-size: 180% 180%;
-    animation: aurora 18s ease infinite;
+    /* Degradê linear limpo e fixo */
+    background: linear-gradient(135deg, #f0fdf4 0%, #e0f2fe 100%);
     background-attachment: fixed;
     color: #334155; 
     line-height: 1.8;
@@ -22,60 +20,53 @@ body {
     margin: 0 auto;
 }
 
-@keyframes aurora {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
 
 header {
     text-align: left;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 header h1 {
-    font-size: 2.6rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: #0f172a;
-    letter-spacing: -0.04em;
+    letter-spacing: -0.05em;
     margin-bottom: 6px;
 }
 
 header p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #db2777; /* Rosa característico */
-    font-weight: 600;
-    letter-spacing: 0.1em;
+    font-weight: 500;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
 }
 
 
 section {
-    background-color: rgba(255, 255, 255, 0.55); /* Vidro translúcido */
-    backdrop-filter: blur(16px); /* Efeito de desfoque de fundo */
-    -webkit-backdrop-filter: blur(16px);
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
     padding: 35px;
-    border-radius: 24px;
+    border-radius: 20px;
     margin-bottom: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.7);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.03); /* Sombra super leve */
-    transition: transform 0.4s ease, border-color 0.4s ease;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.03);
+    transition: all 0.4s ease;
 }
 
 h2 {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.1em;
     color: #64748b;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     display: block;
 }
 
 p {
     color: #475569;
-    font-size: 0.98rem;
+    font-size: 1rem;
 }
 
 
@@ -86,110 +77,102 @@ p {
 }
 
 .tag {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: #ffffff;
     color: #475569;
-    padding: 8px 18px;
+    padding: 8px 16px;
     border-radius: 100px;
     font-size: 0.85rem;
     font-weight: 500;
-    border: 1px solid rgba(226, 232, 240, 0.8);
+    border: 1px solid #e2e8f0;
     display: flex;
     align-items: center;
     gap: 8px;
-    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: all 0.3s ease;
 }
 
 .tag i {
     color: #94a3b8;
-    transition: transform 0.4s ease, color 0.4s ease;
 }
 
-/* Hover Aesthetic das Tags */
 .tag:hover {
     background-color: #0f172a;
     color: #ffffff;
     border-color: #0f172a;
-    transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 10px 20px rgba(15, 23, 42, 0.12);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
 }
 
 .tag:hover i {
-    color: #f472b6; /* Ícone ganha rosa no hover */
-    transform: scale(1.1);
+    color: #db2777;
 }
 
 
 .projeto-card {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: #ffffff;
     padding: 24px;
-    border-radius: 16px;
-    margin-top: 16px;
-    border: 1px solid rgba(241, 245, 249, 0.8);
+    border-radius: 14px;
+    margin-top: 15px;
+    border: 1px solid #f1f5f9;
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* 🌟 AQUI ESTÁ A MÁGICA: Oculta a descrição do projeto sem mexer no seu HTML */
-.projeto-card p {
+
     display: none !important;
 }
 
 .projeto-card h3 {
     color: #0f172a;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     font-weight: 600;
-    margin-bottom: 12px; /* Espaço elegante direto para o link */
+    margin-bottom: 12px; 
 }
 
-/* O brilho sofisticado ao passar o mouse */
 .projeto-card:hover {
-    transform: translateY(-5px);
-    background-color: rgba(255, 255, 255, 0.9);
-    border-color: #fbcfe8; /* Borda rosa suave */
-    box-shadow: 0 0 30px rgba(244, 114, 182, 0.2), 0 10px 20px rgba(244, 114, 182, 0.05);
+    transform: translateY(-4px);
+    border-color: #fbcfe8;
+    box-shadow: 0 0 25px rgba(244, 114, 182, 0.25), 0 4px 10px rgba(244, 114, 182, 0.05);
 }
 
 .btn-link {
     display: inline-block;
     color: #db2777;
     text-decoration: none;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
-    transition: all 0.3s ease;
+    letter-spacing: 0.05em;
+    transition: all 0.2s ease;
 }
 
 .btn-link:hover {
     color: #0f172a;
-    padding-left: 5px; /* Empurra a setinha pro lado */
+    letter-spacing: 0.08em;
 }
 
 
-  
 .links-contato {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
 }
 
 .links-contato a {
     color: #475569;
     text-decoration: none;
-    padding: 16px 20px;
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 16px;
-    border: 1px solid rgba(226, 232, 240, 0.8);
+    padding: 14px 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
     font-size: 0.95rem;
     font-weight: 500;
-    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: all 0.3s ease;
 }
 
-
-    background-color: rgba(255, 255, 255, 0.9);
+.links-contato a:hover {
     border-color: #fbcfe8;
     color: #db2777;
-    padding-left: 28px; 
-    box-shadow: 0 0 25px rgba(244, 114, 182, 0.15);
+    padding-left: 26px;
+    box-shadow: 0 0 20px rgba(244, 114, 182, 0.2);
 }
 
 footer {
@@ -199,8 +182,8 @@ footer {
 }
 
 footer p {
-    font-size: 0.75rem;
-    letter-spacing: 0.1em;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
     color: #94a3b8;
     text-transform: uppercase;
 }
