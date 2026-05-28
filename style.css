@@ -1,4 +1,5 @@
 
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +8,7 @@
 }
 
 body {
-    background-color: #e0f2fe !important; 
+    background-color: #e0f2fe !important; /* Azul bebê limpo e claro */
     color: #475569; 
     line-height: 1.6;
     padding: 60px 20px;
@@ -18,7 +19,6 @@ body {
     margin: 0 auto;
 }
 
-
 header {
     text-align: center;
     margin-bottom: 50px;
@@ -26,7 +26,7 @@ header {
 
 header h1 {
     font-size: 2.2rem;
-    color: #db2777; 
+    color: #db2777; /* Rosa bebê */
     margin-bottom: 8px;
 }
 
@@ -58,6 +58,8 @@ p {
     color: #64748b;
     font-size: 1rem;
 }
+
+
 .tags-habilidades {
     display: flex;
     flex-wrap: wrap;
@@ -96,6 +98,7 @@ p {
 .tag:hover i {
     color: #ffffff;
 }
+
 
 .projeto-card {
     background-color: #f8fafc;
@@ -144,20 +147,19 @@ p {
 
 .links-contato {
     display: flex;
-    flex-wrap: wrap; 
-    gap: 12px;  
-    justify-content: flex-start;
+    flex-direction: column; 
+    gap: 14px;              
 }
 
 .links-contato a {
     color: #475569;
     text-decoration: none;
-    padding: 10px 18px;
+    padding: 14px 20px;    
     background-color: #f8fafc;
-    border-radius: 30px; 
-    font-size: 0.9rem;
+    border-radius: 12px;  
+    font-size: 0.95rem;
     font-weight: 500;
-    display: inline-block;
+    display: block;         
     transition: all 0.3s ease;
 }
 
@@ -165,8 +167,8 @@ p {
 .links-contato a:hover {
     background-color: #fdf2f8;
     color: #db2777;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 15px rgba(244, 114, 182, 0.25);
+    padding-left: 26px;     
+    box-shadow: 0 4px 15px rgba(244, 114, 182, 0.2);
 }
 
 
