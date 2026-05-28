@@ -3,231 +3,204 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 body {
-    background-color: #e0f2fe; /* Azul bebê super limpo e claro */
-    color: #475569; /* Texto geral em cinza azulado para leitura perfeita */
-    line-height: 1.6;
-    padding: 40px 20px;
+    
+    background: linear-gradient(300deg, #fdf2f8, #e0f2fe, #f0fdf4);
+    background-size: 180% 180%;
+    animation: aurora 18s ease infinite;
+    background-attachment: fixed;
+    color: #334155; 
+    line-height: 1.8;
+    padding: 80px 20px;
 }
 
 .container {
-    max-width: 700px;
+    max-width: 650px;
     margin: 0 auto;
+}
+
+@keyframes aurora {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 
 header {
-    text-align: center;
-    margin-bottom: 40px;
+    text-align: left;
+    margin-bottom: 50px;
 }
 
 header h1 {
-    font-size: 2.2rem;
-    color: #db2777; /* Rosa bebê marcante */
-    margin-bottom: 8px;
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #0f172a;
+    letter-spacing: -0.04em;
+    margin-bottom: 6px;
 }
 
 header p {
-    font-size: 1.1rem;
-    color: #64748b;
-    letter-spacing: 1px;
+    font-size: 1rem;
+    color: #db2777; /* Rosa característico */
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
 
 section {
-    background-color: #ffffff; /* Fundo branco para dar leveza */
-    padding: 30px;
-    border-radius: 16px; /* Cantos arredondados fofos */
-    margin-bottom: 25px;
-    border: 2px solid #fce7f3; /* Bordinha rosa bebê sutil */
-    box-shadow: 0 4px 6px -1px rgba(219, 39, 119, 0.03);
+    background-color: rgba(255, 255, 255, 0.55); /* Vidro translúcido */
+    backdrop-filter: blur(16px); /* Efeito de desfoque de fundo */
+    -webkit-backdrop-filter: blur(16px);
+    padding: 35px;
+    border-radius: 24px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.03); /* Sombra super leve */
+    transition: transform 0.4s ease, border-color 0.4s ease;
 }
 
 h2 {
-    font-size: 1.3rem;
-    color: #f472b6; /* Títulos em Rosa Bebê */
-    margin-bottom: 15px;
-    border-bottom: 2px solid #fce7f3;
-    padding-bottom: 5px;
-    display: inline-block;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #64748b;
+    margin-bottom: 25px;
+    display: block;
 }
 
 p {
-    color: #64748b;
-    font-size: 1rem;
+    color: #475569;
+    font-size: 0.98rem;
 }
+
 
 .tags-habilidades {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 15px;
-    justify-content: center;
+    gap: 10px;
 }
 
 .tag {
-    background-color: #fdf2f8;
-    color: #db2777;
-    padding: 10px 18px;
-    border-radius: 30px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    border: 2px solid #fbcfe8;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #475569;
+    padding: 8px 18px;
+    border-radius: 100px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid rgba(226, 232, 240, 0.8);
     display: flex;
     align-items: center;
     gap: 8px;
-    cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .tag i {
-    font-size: 1.1rem;
-    color: #f472b6;
-    transition: transform 0.3s ease;
+    color: #94a3b8;
+    transition: transform 0.4s ease, color 0.4s ease;
 }
 
-/* Interatividade com brilho nas Tags */
+/* Hover Aesthetic das Tags */
 .tag:hover {
-    background-color: #db2777;
+    background-color: #0f172a;
     color: #ffffff;
-    border-color: #db2777;
-    transform: translateY(-4px) scale(1.03);
-    box-shadow: 0 0 12px rgba(219, 39, 119, 0.3);
+    border-color: #0f172a;
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(15, 23, 42, 0.12);
 }
 
 .tag:hover i {
-    color: #ffffff;
+    color: #f472b6; /* Ícone ganha rosa no hover */
+    transform: scale(1.1);
 }
 
 
 .projeto-card {
-    background-color: #f8fafc;
-    padding: 20px;
-    border-radius: 12px;
-    margin-top: 15px;
-    border: 1px solid #e2e8f0;
-    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 24px;
+    border-radius: 16px;
+    margin-top: 16px;
+    border: 1px solid rgba(241, 245, 249, 0.8);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-
-.projeto-card:hover {
-    transform: translateY(-3px);
-    border-color: #f472b6;
-    background-color: #fdf2f8; 
-    box-shadow: 0 0 15px rgba(244, 114, 182, 0.4); /* Brilho neon pastel */
+/* 🌟 AQUI ESTÁ A MÁGICA: Oculta a descrição do projeto sem mexer no seu HTML */
+.projeto-card p {
+    display: none !important;
 }
 
 .projeto-card h3 {
-    color: #db2777;
+    color: #0f172a;
     font-size: 1.1rem;
-    margin-bottom: 8px;
+    font-weight: 600;
+    margin-bottom: 12px; /* Espaço elegante direto para o link */
 }
 
-.projeto-card p {
-    font-size: 0.95rem;
-    color: #64748b;
-    margin-bottom: 15px;
+/* O brilho sofisticado ao passar o mouse */
+.projeto-card:hover {
+    transform: translateY(-5px);
+    background-color: rgba(255, 255, 255, 0.9);
+    border-color: #fbcfe8; /* Borda rosa suave */
+    box-shadow: 0 0 30px rgba(244, 114, 182, 0.2), 0 10px 20px rgba(244, 114, 182, 0.05);
 }
 
 .btn-link {
     display: inline-block;
-    color: #38bdf8; /* Link em azul celeste */
+    color: #db2777;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 600;
-    transition: color 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    transition: all 0.3s ease;
 }
 
 .btn-link:hover {
-    color: #db2777;
-    text-decoration: underline;
+    color: #0f172a;
+    padding-left: 5px; /* Empurra a setinha pro lado */
 }
 
+
+  
 .links-contato {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin-top: 15px;
 }
 
 .links-contato a {
     color: #475569;
     text-decoration: none;
-    padding: 12px 15px;
-    background-color: #f8fafc;
-    border-radius: 10px;
-    border: 1px solid #e2e8f0;
+    padding: 16px 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 16px;
+    border: 1px solid rgba(226, 232, 240, 0.8);
     font-size: 0.95rem;
-    transition: all 0.2s ease;
+    font-weight: 500;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 
-.links-contato a:hover {
-    background-color: #fdf2f8;
-    border-color: #f472b6;
-    padding-left: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-color: #fbcfe8;
     color: #db2777;
-    box-shadow: 0 0 12px rgba(244, 114, 182, 0.3);
+    padding-left: 28px; 
+    box-shadow: 0 0 25px rgba(244, 114, 182, 0.15);
 }
 
 footer {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 60px;
     padding-top: 20px;
-    border-top: 1px solid #e2e8f0;
 }
 
 footer p {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
     color: #94a3b8;
+    text-transform: uppercase;
 }
-
-
-
-
-header p {
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 2px solid #db2777; /* O cursor piscando */
-    animation: 
-        typing 3.5s steps(30, end),
-        blink-cursor 0.75s step-end infinite;
-}
-
-
-section {
-    animation: fadeInSuave 1.2s ease-out forwards;
-    opacity: 0; /* Começa invisível e o CSS revela */
-}
-
-section:nth-child(1) { animation-delay: 0.2s; }
-section:nth-child(2) { animation-delay: 0.4s; }
-section:nth-child(3) { animation-delay: 0.6s; }
-section:nth-child(4) { animation-delay: 0.8s; }
-
-
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
-
-@keyframes blink-cursor {
-    from, to { border-color: transparent }
-    50% { border-color: #db2777 }
-}
-
-@keyframes fadeInSuave {
-    from {
-        opacity: 0;
-        transform: translateY(20px); /* Vem um pouco de baixo */
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
