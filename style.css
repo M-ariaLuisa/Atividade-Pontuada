@@ -7,10 +7,10 @@
 }
 
 body {
-    background-color: 
+    background-color: #e0f2fe !important;
     color: #475569; 
     line-height: 1.6;
-    padding: 40px 20px;
+    padding: 60px 20px;
 }
 
 .container {
@@ -21,12 +21,12 @@ body {
 
 header {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px; 
 }
 
 header h1 {
     font-size: 2.2rem;
-    color: #db2777; /* Rosa bebê marcante */
+    color: #db2777; 
     margin-bottom: 8px;
 }
 
@@ -38,11 +38,11 @@ header p {
 
 
 section {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 16px;
-    margin-bottom: 25px;
-    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.03); 
+    background-color: #ffffff; 
+    padding: 35px;
+    border-radius: 16px; 
+    margin-bottom: 40px; 
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.04); 
     transition: all 0.4s ease;
 }
 
@@ -59,6 +59,7 @@ p {
     color: #64748b;
     font-size: 1rem;
 }
+
 
 
 .tags-habilidades {
@@ -101,7 +102,6 @@ p {
     color: #ffffff;
 }
 
-
 .projeto-card {
     background-color: #f8fafc;
     padding: 20px;
@@ -110,20 +110,19 @@ p {
     transition: all 0.3s ease;
 }
 
-
-.projeto-card p {
-    font-size: 0.95rem;
-    color: #64748b;
-    margin-bottom: 15px;
-}
-
 .projeto-card h3 {
     color: #db2777;
     font-size: 1.1rem;
     margin-bottom: 8px; 
 }
 
+.projeto-card p {
+    font-size: 0.95rem;
+    color: #64748b;
+    margin-bottom: 15px; 
+}
 
+/* INTERATIVIDADE: 
 .projeto-card:hover {
     transform: translateY(-3px);
     background-color: #fdf2f8; 
@@ -170,9 +169,10 @@ p {
     box-shadow: 0 0 12px rgba(244, 114, 182, 0.3);
 }
 
+
 footer {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 60px;
     padding-top: 20px;
     border-top: 1px solid #e2e8f0;
 }
